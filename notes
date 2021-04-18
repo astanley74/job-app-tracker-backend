@@ -1,0 +1,13 @@
+User model
+    - has_many applications
+    - First Name
+    - Last Name
+    - Email
+    - Password
+
+Application model
+    - belongs_to User
+    - Company Name
+    - Date of Application
+    - Position
+    - Application Status
