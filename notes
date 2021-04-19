@@ -1,15 +1,8 @@
 User model
     - has_many applications
-    - First Name
-    - Last Name
-    - Email
-    - Password
+    :first_name - string, :last_name - string, :email - string, :password - string
 
 Application model
     - belongs_to User
-    - Company Name
-    - Date of Application
-    - Position
-    - Application Status
-    - Current Stage
-    - Notes about Company
+    :company_name - string, :date_of_application - string, :position - string,
+    :application_status - boolean, :current_stage - string, :notes - string
