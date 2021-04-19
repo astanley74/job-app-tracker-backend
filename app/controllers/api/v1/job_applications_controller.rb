@@ -1,2 +1,2 @@
-class JobApplicationsController < ApplicationController
+class Api::V1::JobApplicationsController < ApplicationController
 end
