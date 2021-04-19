@@ -13,7 +13,7 @@ class Api::V1::JobApplicationsController < ApplicationController
     end
 
     private
-        def user_params
+        def job_application_params
         end
 
 end
