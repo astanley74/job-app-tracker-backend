@@ -5,4 +5,4 @@ User model
 Application model
     - belongs_to User
     :company_name - string, :date_of_application - string, :position - string,
-    :application_status - boolean, :current_stage - string, :notes - string
+    :application_status - boolean, :current_stage - string, :notes - string, :user_id - integer
