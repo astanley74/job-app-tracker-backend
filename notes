@@ -11,3 +11,5 @@ Application model
     - Date of Application
     - Position
     - Application Status
+    - Current Stage
+    - Notes about Company
