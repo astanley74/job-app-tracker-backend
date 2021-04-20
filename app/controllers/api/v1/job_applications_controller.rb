@@ -16,9 +16,13 @@ class Api::V1::JobApplicationsController < ApplicationController
     end
 
     def show
+        job_application = JobApplication.find_by(id: params[:id])
+        render json: job_application
     end
 
     def destroy
+        job_application = JobApplication.find_by(id: params[:id])
+        job_application.destroy
     end
 
     private
