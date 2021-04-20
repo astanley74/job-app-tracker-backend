@@ -14,6 +14,7 @@ class Api::V1::JobApplicationsController < ApplicationController
 
     private
         def job_application_params
+            params.require(:job_applicatioin).permit(:company_name, :date_of_application, :position, :application_status, :current_stage, :notes, :user_id)
         end
 
 end
