@@ -1,7 +1,8 @@
 class Api::V1::JobApplicationsController < ApplicationController
 
     def index
-        job_applications = JobApplication.all
+        user = User.find(params[:user_id])
+        job_applications = user.job_applications
         render json: job_applications
     end
 
