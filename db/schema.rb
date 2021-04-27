@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2021_04_19_053952) do
 
   create_table "job_applications", force: :cascade do |t|
     t.string "company_name"
-    t.date "date_of_application"
+    t.string "date_of_application"
     t.string "position"
     t.boolean "application_status"
     t.string "current_stage"
