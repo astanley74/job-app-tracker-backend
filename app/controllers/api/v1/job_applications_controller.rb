@@ -1,6 +1,7 @@
 class Api::V1::JobApplicationsController < ApplicationController
 
     def index
+        user = User.find(params[:user_id])
         job_applications = JobApplication.all
         render json: job_applications
     end
@@ -17,7 +18,9 @@ class Api::V1::JobApplicationsController < ApplicationController
 
     def destroy
         job_application = JobApplication.find_by(id: params[:id])
+        user = User.find_by(id: params[:user_id])
         job_application.destroy
+        render json: user
     end
 
     private
