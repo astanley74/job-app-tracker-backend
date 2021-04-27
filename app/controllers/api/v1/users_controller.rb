@@ -10,7 +10,7 @@ class Api::V1::UsersController < ApplicationController
             user = User.find_by(email: user_params[:email])
             render json: user
         else
-            user = User.crerate(user_params)
+            user = User.create(user_params)
             render json: user
         end
     end
