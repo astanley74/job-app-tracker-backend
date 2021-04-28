@@ -11,6 +11,11 @@ class Api::V1::JobApplicationsController < ApplicationController
             render json: job_application
     end
 
+    def update
+        job_application = JobApplication.find_by(id: params[:id])
+        job_application.update(job_application_params)
+    end
+
     def show
         job_application = JobApplication.find_by(id: params[:id])
         render json: job_application
