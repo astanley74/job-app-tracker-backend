@@ -1,24 +1,29 @@
-# README
+## Job Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This applicationw as built with a React/Redux/JavaScript frontend and a Ruby on Rails backend API. Job Tracker allows users to create, update and delete job applications in order to monitor their progress with prospective employers.
 
-Things you may want to cover:
+## What you can do
 
-* Ruby version
+- Create an account
+- Create multiple job applications
+- View all created job applications
+- Update current job applications
+- Delete current job applications
 
-* System dependencies
+## Installation
 
-* Configuration
+    $ git clone git@github.com:astanley74/job-app-tracker-backend.git
+    $ cd job-app-tracker-backend
+    $ rails db:create
+    $ rails db:migrate
+    $ rails db:seed
 
-* Database creation
+## Start the Server
+    $ rails s
 
-* Database initialization
+## Demo
+[Application Walkthrough](https://www.youtube.com/watch?v=bCZSAoKtvPM&t=5s)
 
-* How to run the test suite
+## Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Job Tracker is dedicated to bringing a welcoming, free of harrassment, working environment. Click [here](https://www.contributor-covenant.org/) to view the Code of Conduct.
