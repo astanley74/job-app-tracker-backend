@@ -6,3 +6,11 @@ Application model
     - belongs_to User
     :company_name - string, :date_of_application - string, :position - string,
     :application_status - boolean, :current_stage - string, :notes - string, :user_id - integer
+
+
+class AddUserToJobApplication < ActiveRecord::Migration[6.1]
+  def change
+    add_reference :job_applications, :user, foreign_key: true
+  end
+end
+
