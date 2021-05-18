@@ -10,16 +10,17 @@ This applicationw as built with a React/Redux/JavaScript frontend and a Ruby on 
 - Update current job applications
 - Delete current job applications
 
-## Installation
+## How to Use
 
-    $ git clone git@github.com:astanley74/job-app-tracker-backend.git
-    $ cd job-app-tracker-backend
-    $ rails db:create
-    $ rails db:migrate
-    $ rails db:seed
+This Rails API has been deployed via heroku. Navigate to [this url](https://stormy-refuge-75117.herokuapp.com/api/v1/users) to see a list of all users.
 
-## Start the Server
-    $ rails s
+## Example API calls
+
+https://stormy-refuge-75117.herokuapp.com/api/v1/users/
+https://stormy-refuge-75117.herokuapp.com/api/v1/users/{user_id}/job_applications
+
+Ensure to fill in (user_id) with desired user
+
 
 ## Demo
 [Application Walkthrough](https://www.youtube.com/watch?v=bCZSAoKtvPM&t=5s)
