@@ -18,9 +18,9 @@ This Rails API has been deployed via heroku. Navigate to [this url](https://stor
 
 https://stormy-refuge-75117.herokuapp.com/api/v1/users/
 <br>
-https://stormy-refuge-75117.herokuapp.com/api/v1/users/{user_id}/job_applications
+https://stormy-refuge-75117.herokuapp.com/api/v1/users/1/job_applications
 
-Ensure to fill in (user_id) with desired user
+Ensure to fill in (1) with desired user's id
 
 
 ## Demo
