@@ -17,6 +17,7 @@ This Rails API has been deployed via heroku. Navigate to [this url](https://stor
 ## Example API calls
 
 https://stormy-refuge-75117.herokuapp.com/api/v1/users/
+<br>
 https://stormy-refuge-75117.herokuapp.com/api/v1/users/{user_id}/job_applications
 
 Ensure to fill in (user_id) with desired user
