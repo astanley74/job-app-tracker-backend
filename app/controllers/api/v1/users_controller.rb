@@ -6,12 +6,18 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create
-        if User.find_by(email: user_params[:email])
-            user = User.find_by(email: user_params[:email])
-            render json: user
+        # if User.find_by(email: user_params[:email])
+        #     user = User.find_by(email: user_params[:email])
+        #     render json: user
+        # else
+        #     user = User.create(user_params)
+        #     render json: user
+        # end
+        @user = User.create(user_params)
+        if @user.valid?
+            render json: @user, status: :created
         else
-            user = User.create(user_params)
-            render json: user
+            render json: { error: 'failed to create user' }, status: :not_acceptable
         end
     end
 
@@ -27,7 +33,7 @@ class Api::V1::UsersController < ApplicationController
 
     private
         def user_params
-            params.require(:user).permit(:email, :first_name, :last_name)
+            params.require(:user).permit(:email, :password, :first_name, :last_name)
         end
 
 end
