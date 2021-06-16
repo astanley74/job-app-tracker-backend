@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users do
         resources :job_applications
       end
+      post '/login', to: 'sessions#create'
     end
   end
   
