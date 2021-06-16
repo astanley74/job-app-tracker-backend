@@ -12,13 +12,12 @@ This applicationw as built with a React/Redux/JavaScript frontend and a Ruby on 
 
 ## How to Use
 
-This Rails API has been deployed via heroku. Navigate to [this url](https://stormy-refuge-75117.herokuapp.com/api/v1/users) to see a list of all users.
+This Rails API has been deployed via heroku. Navigate to [this url](https://thawing-ocean-45459.herokuapp.com/api/v1/users) to see a list of all users.
 
 ## Example API calls
 
-https://stormy-refuge-75117.herokuapp.com/api/v1/users/
+https://thawing-ocean-45459.herokuapp.com/api/v1/users
 <br>
-https://stormy-refuge-75117.herokuapp.com/api/v1/users/1/job_applications
 
 Ensure to fill in (1) with desired user's id
 
