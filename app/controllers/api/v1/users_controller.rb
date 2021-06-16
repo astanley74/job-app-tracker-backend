@@ -1,8 +1,8 @@
 class Api::V1::UsersController < ApplicationController
 
     def index
-        users = User.all
-        render json: users
+        @users = User.all
+        render json: @users, status: :accepted
     end
 
     def create
@@ -15,20 +15,20 @@ class Api::V1::UsersController < ApplicationController
         # end
         @user = User.create(user_params)
         if @user.valid?
-            render json: @user, status: :created
+            render json: { user: UserSerializer.new(@user) }, status: :created
         else
-            render json: { error: 'failed to create user' }, status: :not_acceptable
+            render json: { error: 'Email already in use' }, status: :not_acceptable
         end
     end
 
     def show
-        user = User.find_by(id: params[:id])
-        render json: user
+        @user = User.find_by(id: params[:id])
+        render json: @user
     end
 
     def destroy
-        user = User.find_by(id: params[:id])
-        user.destroy
+        @user = User.find_by(id: params[:id])
+        @user.destroy
     end
 
     private
